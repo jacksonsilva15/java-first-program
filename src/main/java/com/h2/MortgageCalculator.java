@@ -41,4 +41,13 @@ public class MortgageCalculator {
       System.exit(-1);
     }
     
+    final long loanAmount = Utilities.getLongValue(args[0]);
+    final int termInYears = Utilities.getIntvalue(args[1]);
+    final float annualRate = Utilities.getFloatValue(args[2]);
+    final MortgageCalculator c = new MortgageCalculator(loanAmount, termInYears, annualRate);
+    final double monthlyPayment = c.getMonthlyPayment();
+    DecimalFormat df = new DecimalFormat("####0.00");
     
+    System.out.println("MonthlyPayment: " + df.format(monthlyPayment));
+  }
+}

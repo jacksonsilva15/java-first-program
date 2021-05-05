@@ -30,8 +30,8 @@ public class SavingsCalculator {
     }
     
     public static void main(String[] args) {
-        if (args.lenght < 2) {
-            System.out.println("usage: SavingsCalculator <credits separated by ','> <debits separated by ','>");
+        if (args.length < 2) {
+            System.out.println("usage: savingsCalculator <credits separated by ','> <debits separated by ','>");
             System.exit(-1);
     }
     
